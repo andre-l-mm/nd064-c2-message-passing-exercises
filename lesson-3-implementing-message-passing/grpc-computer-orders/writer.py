@@ -22,9 +22,3 @@ order = order_pb2.OrderMessage(
 
 
 response = stub.Create(order)
-
-
-empty = order_pb2.Empty()
-orders = stub.Get(empty)
-
-print(orders)
